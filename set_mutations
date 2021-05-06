@@ -1,0 +1,7 @@
+n=int(input())
+a=set(list(map(int,input().split()))[:n])
+for i in range(int(input())):
+    l=list(map(str,input().split()))
+    s=set(list(map(int,input().split()))[:int(l[1])])
+    eval("a."+l[0]+"(s)")
+print(sum(a))
